@@ -1,0 +1,28 @@
+<h1>Upload Your Article</h1>
+<%= form_for @article do |form| %>
+  <%= form.label :Title %>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <%= form.text_field :article_title %>
+  <br/>
+   <br/>
+
+  <%= form.label :Content %>
+  <%= form.text_area :article_content, cols: 30, rows: 10 %>
+  <br/>
+  <%= form.label :Status %>
+  &nbsp;
+  &nbsp;
+  <%= form.radio_button :article_status, "Active" %>
+  <%= label :article_status, 'Active' %>
+  <%= form.radio_button :article_status, "Hide" %>
+  <%= label :article_status, 'Hide' %>
+  <br/>
+  <br/>
+  <%= form.submit "Save" %>
+<% end %> 
+
+
+    

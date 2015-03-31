@@ -1,0 +1,10 @@
+<h1>Edit Article</h1>
+<%= form_for @foto, html: {class: "nifty_form"} do |f| %>
+  <%= f.label "title" %>
+  <%= f.text_field :title %>
+  <%= f.label "content" %>
+  <%= f.text_field :content %>
+  <%= f.label "status" %>
+  <%= f.text_field :status %>
+  <%= f.submit "Save" %>
+<% end %>
